@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var arr = [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]], [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]];
+function transformEmployeeData(arr)
+{
+var transformEmployeeList = [];
+for(var i = 0; i < arr.length; i++)
+{
+var obj = {};
+var dataArr = arr[i];
+for(var j = 0; j < arr[i].length; j++)
+{
+obj[dataArr[j][0]] = dataArr[j][1];
+}
+transformEmployeeList.push(obj);
+}
+return transformEmployeeList;
+}
+console.log(transformEmployeeData(arr));
+</script>
+</body>
+</html>

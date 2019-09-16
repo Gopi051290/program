@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var obj = {
+			name: "ISRO",
+			age: 35,
+			role: "Scientist"
+		};
+function convertObjectToList(obj)
+{
+var a = []; //Array Declaration
+for(var prop in obj) //for in loop declaration
+{
+var b = []; //declare second array to be nested and contain key/value pairs
+b.push(prop); //push key to second array
+b.push(obj[prop]); //push value to second array
+a.push(b); //push second array to first array
+}
+return a;
+}
+console.log(convertObjectToList(obj));
+</script>
+</body>
+</html>

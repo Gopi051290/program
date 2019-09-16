@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<p id="txt"></p>
+<script>
+var Obj = {
+			name: "Rajinikanath", 
+			age: 33,
+			hasPets: false
+		  };
+function printAllValues(Obj)
+{
+var stringifytxt = JSON.stringify(Obj);
+document.getElementById('txt').innerHTML += stringifytxt;
+}
+console.log(printAllValues(Obj));
+</script>
+</body>
+</html>

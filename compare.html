@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var actual = {
+				firstName: 'Mohan',
+				lastName: 'kumar'
+			 };
+var expected = {
+					firstName: 'Mohan',
+					lastName: 'Raj'
+			   };
+function assertObjectsEqual(actual, expected, testName)
+{
+actual = JSON.stringify(actual);
+expected = JSON.stringify(expected);
+if(actual == expected)
+{
+alert('passed');
+}
+else
+{
+alert('FAILED ['+ testName +'] Expected '+ excepted +', but got '+ actual);
+}
+}
+console.log(assertObjectsEqual);
+</script>
+</body>
+</html>
